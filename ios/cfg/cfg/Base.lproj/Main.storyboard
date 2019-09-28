@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="742.02898550724649" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="dbt-af-mwG">
             <objects>
-                <viewController id="jJR-73-wZL" sceneMemberID="viewController">
+                <viewController id="jJR-73-wZL" customClass="LoginViewController" customModule="cfg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Yz-2a-Uxo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,6 +112,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dik-Qx-Oao"/>
                     </view>
+                    <connections>
+                        <outlet property="signInButton" destination="V4Y-7m-CD9" id="Pbi-DU-Ubc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TbY-wg-ZIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
