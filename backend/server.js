@@ -24,11 +24,13 @@ app.get('/newhost', async (req, res) => {
         });
     })
 });
+
 /*
 async function generateHangoutsUrl(){
 
 }
 */
+
 app.get('/hosts', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
@@ -46,7 +48,7 @@ app.get('/newUser', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collection("users").insert(req.params.userObj, function (err, doc) {
+        db.collection("users").insert(req.params.gval, function (err, doc) {
            if(err){
                console.log(err);
            } 
@@ -69,7 +71,6 @@ async function getUserIdPair(pair){
             })
 
             resolve({one:u1, two:u2});
-
         }
         catch(err){
             reject(err);
@@ -103,7 +104,7 @@ app.get('/user/:id', function(req, res) {
 });
 
 app.get('/', function (req, res) {
- return res.send('{"return":"none"}');
+    return res.send('{"return":"none"}');
 });
 
 app.listen(process.env.PORT || 8080);
