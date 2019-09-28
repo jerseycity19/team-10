@@ -37,6 +37,7 @@ The following requirements / functionality are taken into consideration and comp
 **Developers**
 
 - Helal Chowdhury 
+
 <div style="display: inline-block;">
   <img src="https://github.com/jerseycity19/team-10/blob/master/Helal%20Chowdhury%20.jpg"  width="200">
  <!-- <img src="assets/"  width="295"> -->
@@ -44,13 +45,21 @@ The following requirements / functionality are taken into consideration and comp
 </div><br/>
 
 - Smit Shah 
+
 <div style="display: inline-block;">
   <img src="https://github.com/jerseycity19/team-10/blob/master/Smit%20Shah.jpg"  width="200">
  <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
 
-- Catherine Lin        
-- Sulbha Aggarwal      
+- Sulbha Aggarwal 
+
+<div style="display: inline-block;">
+  <img src="https://github.com/jerseycity19/team-10/blob/master/Sulbha%20Aggarwal.jpg"  width="200">
+ <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+
+- Catherine Lin 
 - Logan Le             
 - Eric Schneider       
