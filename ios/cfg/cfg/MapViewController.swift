@@ -69,7 +69,39 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(prospectPark)
         mapView.addAnnotation(jersey)
     }
-
     
-
+    
 }
+
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation {
+            return nil
+        }
+        else{
+            let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+            
+            pin.canShowCallout = true
+            pin.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            return pin
+        }
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
+        showRoute()
+        let annView = view.annotation
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
+            print("detals vc not founds")
+            return
+        }
+        
+        
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+}
+
