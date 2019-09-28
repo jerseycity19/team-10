@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.741967906776-4c56rl4fsqvun7ij7psom6a6ojtrbmm2</string>
+				<string>com.googleusercontent.apps.102353171397-91t73n5u3ea89co366j5a99kagqhcb9j</string>
 			</array>
 		</dict>
 	</array>
@@ -31,18 +31,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>NSContactsUsageDescription</key>
-	<string>This app requires access to contacts</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>This app requires access to calander</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This app requires access to contacts</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>This app requires location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses location</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
