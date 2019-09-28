@@ -86,7 +86,7 @@ class MapViewController: UIViewController {
         
         let rome = MKPointAnnotation()
         jersey.title = "It's My Park"
-        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522)
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
 
         let col = MKPointAnnotation()
         jersey.title = "It's My Park"
