@@ -6,3 +6,4 @@
 
 **Time Spent** A total of around 24 hours spent to solve the real world problem for non profit organizations to achieve their mission.
 
+**Build With** Swift, Android Studio
