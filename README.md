@@ -1,6 +1,6 @@
 "# team-10" 
 
-# Seat_of_the_Table
+# WorldOrder
 
 **About** :-  
 
@@ -16,7 +16,10 @@ Swift, Android Studio, Firebase, HTML, CSS, JavaScriot, Mongo DB
 
 **Frameworks** :- 
 
+UIKit, MapKit, CoreLocation, FlyoverKit, UserNotifications, EventKit, Contacts, Firebase, GoogleSignIn, Parse, Speech
 
+
+**Methods** :-
 
 
 **User Stories** :- 
