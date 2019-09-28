@@ -43,7 +43,13 @@ The following requirements / functionality are taken into consideration and comp
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
 
-- Smit Shah                
+- Smit Shah 
+<div style="display: inline-block;">
+  <img src="https://github.com/jerseycity19/team-10/blob/master/Smit%20Shah.jpg"  width="200">
+ <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+
 - Catherine Lin        
 - Sulbha Aggarwal      
 - Logan Le             
