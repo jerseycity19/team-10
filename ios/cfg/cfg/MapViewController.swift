@@ -83,20 +83,33 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(brooklynBridge)
         mapView.addAnnotation(prospectPark)
         mapView.addAnnotation(jersey)
+        
+        let rome = MKPointAnnotation()
+        jersey.title = "It's My Park"
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8566, longitude: 2.3522)
+
+        let col = MKPointAnnotation()
+        jersey.title = "It's My Park"
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 49.111, longitude: 2.3522)
+
+        mapView.addAnnotation(rome)
+        mapView.addAnnotation(col)
+        
+        
     }
     
     func showRoute() {
         let sourceLocation = currentCoordinate ?? CLLocationCoordinate2D(latitude: 40.6742, longitude: -73.8418)
         let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
-        
+
         let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
         let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
-        
+
         let directionRequest = MKDirections.Request()
         directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
         directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
         directionRequest.transportType = .automobile
-        
+
         let directions = MKDirections(request: directionRequest)
         directions.calculate {(response, error) in
             guard let directionResponse = response else {
@@ -107,11 +120,11 @@ class MapViewController: UIViewController {
             }
             let route = directionResponse.routes[0]
             self.mapView.addOverlay(route.polyline, level: .aboveRoads)
-            
+
             let rect = route.polyline.boundingMapRect
             self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
         }
-        
+
         self.mapView.delegate = self
     }
     
@@ -168,7 +181,7 @@ extension MapViewController: CLLocationManagerDelegate {
         mapView.setRegion(region, animated: true)
         
         if currentCoordinate == nil{
-            zoomIn(latestLocation.coordinate)
+//            zoomIn(latestLocation.coordinate)
             addAnnotations()
         }
         
