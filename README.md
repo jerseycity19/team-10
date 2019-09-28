@@ -20,7 +20,10 @@ The following requirements / functionality are taken into consideration and comp
 
 **Developers**
 
-- Helal Chowdhury
+- Helal Chowdhury 
+
+![Test Image 1](IMG_20190928_053457__01__01.jpg)
+
 - Smit Shah
 - Catherine Lin
 - Sulbha Aggarwal
