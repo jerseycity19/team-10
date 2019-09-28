@@ -46,7 +46,7 @@
         android:layout_x="93dp"
         android:layout_y="48dp"
         android:background="@android:color/transparent"
-        android:text="Begin"
+        android:text="Join call"
         android:textStyle="bold" />
 
 
