@@ -20,6 +20,7 @@
 		1B9F8717233F2269003D9A35 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8716233F2269003D9A35 /* DetailsViewController.swift */; };
 		1B9F871D233F5846003D9A35 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F871C233F5846003D9A35 /* ContactsViewController.swift */; };
 		1B9F871F233F5ADC003D9A35 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F871E233F5ADC003D9A35 /* ContactTableViewCell.swift */; };
+		1B9F8721233F5BDE003D9A35 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8720233F5BDE003D9A35 /* Contact.swift */; };
 		659BB3E7A2DEA37D8014AFCF /* Pods_cfg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7D08D6F879461F3BD74280 /* Pods_cfg.framework */; };
 		9EB72A6887D2E3F1B1D50786 /* Pods_cfgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7EB8909AC8697010E6BBDE /* Pods_cfgUITests.framework */; };
 		AE9F11E9784EE67169DA7FA0 /* Pods_cfgTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC81F86EE3541ED51EDA95D /* Pods_cfgTests.framework */; };
@@ -63,6 +64,7 @@
 		1B9F8716233F2269003D9A35 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		1B9F871C233F5846003D9A35 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		1B9F871E233F5ADC003D9A35 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		1B9F8720233F5BDE003D9A35 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		1EC81F86EE3541ED51EDA95D /* Pods_cfgTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cfgTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7D08D6F879461F3BD74280 /* Pods_cfg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cfg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1BFCD10A99A5F736C80141 /* Pods-cfg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfg.release.xcconfig"; path = "Target Support Files/Pods-cfg/Pods-cfg.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				1B9F870E233EF666003D9A35 /* GoogleService-Info.plist */,
 				1B9F871C233F5846003D9A35 /* ContactsViewController.swift */,
 				1B9F871E233F5ADC003D9A35 /* ContactTableViewCell.swift */,
+				1B9F8720233F5BDE003D9A35 /* Contact.swift */,
 			);
 			path = cfg;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				1B9F8713233F09CE003D9A35 /* MapViewController.swift in Sources */,
 				1B9F8715233F1C4E003D9A35 /* ProfileViewController.swift in Sources */,
 				1B9F86E1233EF083003D9A35 /* AppDelegate.swift in Sources */,
+				1B9F8721233F5BDE003D9A35 /* Contact.swift in Sources */,
 				1B9F871F233F5ADC003D9A35 /* ContactTableViewCell.swift in Sources */,
 				1B9F8717233F2269003D9A35 /* DetailsViewController.swift in Sources */,
 				1B9F871D233F5846003D9A35 /* ContactsViewController.swift in Sources */,
