@@ -31,7 +31,7 @@ class DetailsViewController: UIViewController, MKMapViewDelegate {
                 print("error \(error)")
                 
                 let event:EKEvent = EKEvent(eventStore: eventStore)
-                event.title = "Mental Health Meeting"
+                event.title = "Mental Health Meeting with Rageeb"
                 event.startDate = Date()
                 event.endDate = Date()
                 event.notes = ""
