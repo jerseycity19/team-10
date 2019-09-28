@@ -40,10 +40,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         let event = events[indexPath.row]
         print("10")
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "EventsCell") as! EventsViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Meeting Table View Cell") as! MeetingsTableViewCell
         print("100")
         
-        cell.setEvents(event: event)
+        cell.setMeetings(event: event)
         
         return cell
     }
