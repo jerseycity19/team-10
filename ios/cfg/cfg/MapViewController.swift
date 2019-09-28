@@ -27,9 +27,15 @@ class MapViewController: UIViewController {
         userLocationSetup()
         self.mapSetup()
         
-        
     }
     
+    func userLocationSetup(){
+        locationManager.requestAlwaysAuthorization() //we can ask this later
+        locationManager.startUpdatingLocation()
+        locationManager.distanceFilter = 100
+        mapView.showsUserLocation = true
+        mapView.mapType = MKMapType.hybrid
+    }
 
     
 
