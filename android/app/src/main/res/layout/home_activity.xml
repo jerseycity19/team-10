@@ -9,7 +9,7 @@
 
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/meetingTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="357dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/pointTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -28,13 +28,13 @@
         android:inputType="textPersonName"
         android:text="Points"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintEnd_toStartOf="@+id/friendTv"
         app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toEndOf="@+id/meetingTv"
         tools:layout_editor_absoluteY="357dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/friendTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
@@ -73,7 +73,7 @@
         tools:layout_editor_absoluteY="267dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/emailTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="hellonyc2019@gmail.com"
@@ -82,14 +82,26 @@
         tools:layout_editor_absoluteY="304dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/meeting_value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="4"
         android:textColor="#00FF00"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/editText4"
-        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="@+id/meetingTv"
+        app:layout_constraintStart_toStartOf="@+id/meetingTv"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/point_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="53"
+        android:textColor="#00FF00"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/pointTv"
+        app:layout_constraintStart_toStartOf="@+id/pointTv"
         tools:layout_editor_absoluteY="328dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
