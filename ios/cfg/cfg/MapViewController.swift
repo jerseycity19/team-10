@@ -141,11 +141,11 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-//        showRoute()
+        showRoute()
         let annView = view.annotation
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else {
+        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
             print("detals vc not founds")
             return
         }
@@ -176,3 +176,4 @@ extension MapViewController: CLLocationManagerDelegate {
         
     }
 }
+
