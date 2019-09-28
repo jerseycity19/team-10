@@ -141,7 +141,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-        showRoute()
+//        showRoute()
         let annView = view.annotation
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

@@ -99,6 +99,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="RA7-tG-cBX"/>
                     <navigationItem key="navigationItem" id="tdb-dA-VHh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -211,6 +212,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kWc-FM-7ms"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XyZ-us-YJ8"/>
                     <connections>
                         <outlet property="mapView" destination="E50-Zk-tHI" id="MtD-ex-gCD"/>
                         <segue destination="KHl-RU-7YN" kind="showDetail" id="BAl-TY-4re"/>
@@ -258,7 +260,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SON-0U-84m"/>
+                        <segue destination="muv-wT-iLe" kind="relationship" relationship="rootViewController" id="qYq-cD-Ezq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKK-n7-diF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -321,7 +323,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ZDX-eQ-Als" kind="relationship" relationship="viewControllers" id="AJB-A1-N6v"/>
-                        <segue destination="C8V-yd-SVZ" kind="relationship" relationship="viewControllers" id="4p2-51-AZ4"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="qgr-N5-HL2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxA-4C-8aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -334,4 +336,7 @@
         <image name="img" width="192" height="192"/>
         <image name="profileBackground" width="375" height="207"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qYq-cD-Ezq"/>
+    </inferredMetricsTieBreakers>
 </document>
