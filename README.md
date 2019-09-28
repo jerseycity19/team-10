@@ -2,28 +2,32 @@
 
 # Seat_of_the_Table
 
-**About** 
+**About** :-  
 
 Connects users from all over the world to discuss various topics based on their interests. This application is used on Android application as well as iOS application with lots of various features involved in it. However, this application is restricted to only allow 6 user's to join the meeting at a time.
 
-**Time Spent**
+**Time Spent** :- 
 
 A total of around 24 hours spent to solve the real world problem for non profit organizations to achieve their mission.
 
-**Build With** 
+**Build With** :-
 
 Swift, Android Studio, Firebase, HTML, CSS, JavaScriot, Mongo DB
 
-**Frameworks** 
+**Frameworks** :- 
 
-**User Stories** 
+
+
+
+**User Stories** :- 
 
 The following requirements / functionality are taken into consideration and completion:-
 
 - The user's are asked to register for the meeting.
 - Google Hangouts are used for the meeting. 
  
-**Images** 
+ 
+**Images** :-
 
  ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
 <div style="display: inline-block;">
@@ -34,7 +38,7 @@ The following requirements / functionality are taken into consideration and comp
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
 
-**Developers**
+**Developers** :-
 
 - Helal Chowdhury 
 
