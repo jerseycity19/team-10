@@ -79,15 +79,15 @@ class MapViewController: UIViewController {
         jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
         
         let col = MKPointAnnotation()
-        col.title = "It's My real Park"
+        col.title = "Mental Health Discussion"
         col.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
         
         let col2 = MKPointAnnotation()
-        col2.title = "It's not My Park"
+        col2.title = "Mental Health Discussion"
         col2.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3476)
         
         let col3 = MKPointAnnotation()
-        col3.title = "It's  is My Park"
+        col3.title = "Mental Health Discussion"
         col3.coordinate = CLLocationCoordinate2D(latitude: 48.8630, longitude: 2.3599)
         
         mapView.addAnnotation(timesSqaureAnnotation)
