@@ -96,11 +96,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-KU-YnC">
-                                <rect key="frame" x="287" y="302" width="86" height="19"/>
+                                <rect key="frame" x="0.0" y="44" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Meet People"/>
                                 <connections>
-                                    <segue destination="C8V-yd-SVZ" kind="showDetail" id="TfX-cb-AI2"/>
+                                    <segue destination="C8V-yd-SVZ" kind="showDetail" id="4ob-nv-K44"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -183,6 +183,18 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaW-HS-Q6c">
+                                <rect key="frame" x="0.0" y="520" width="414" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upcoming Meetings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjA-6v-7t8">
+                                <rect key="frame" x="20" y="485" width="207" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cwB-vD-oev"/>
@@ -231,7 +243,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="muv-wT-iLe" kind="showDetail" id="VUj-YU-fVg"/>
+                                    <segue destination="kHe-Pq-RpB" kind="showDetail" id="c5A-vH-i7j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -333,6 +345,6 @@
         <image name="profileBackground" width="375" height="207"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qYq-cD-Ezq"/>
+        <segue reference="c5A-vH-i7j"/>
     </inferredMetricsTieBreakers>
 </document>
