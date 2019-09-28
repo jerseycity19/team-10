@@ -18,6 +18,8 @@
 		1B9F8713233F09CE003D9A35 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8712233F09CE003D9A35 /* MapViewController.swift */; };
 		1B9F8715233F1C4E003D9A35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8714233F1C4E003D9A35 /* ProfileViewController.swift */; };
 		1B9F8717233F2269003D9A35 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8716233F2269003D9A35 /* DetailsViewController.swift */; };
+		1B9F8719233F3252003D9A35 /* MeetingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F8718233F3252003D9A35 /* MeetingsTableViewCell.swift */; };
+		1B9F871B233F3322003D9A35 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F871A233F3322003D9A35 /* Meeting.swift */; };
 		659BB3E7A2DEA37D8014AFCF /* Pods_cfg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7D08D6F879461F3BD74280 /* Pods_cfg.framework */; };
 		9EB72A6887D2E3F1B1D50786 /* Pods_cfgUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7EB8909AC8697010E6BBDE /* Pods_cfgUITests.framework */; };
 		AE9F11E9784EE67169DA7FA0 /* Pods_cfgTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC81F86EE3541ED51EDA95D /* Pods_cfgTests.framework */; };
@@ -59,6 +61,8 @@
 		1B9F8712233F09CE003D9A35 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1B9F8714233F1C4E003D9A35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9F8716233F2269003D9A35 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		1B9F8718233F3252003D9A35 /* MeetingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsTableViewCell.swift; sourceTree = "<group>"; };
+		1B9F871A233F3322003D9A35 /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
 		1EC81F86EE3541ED51EDA95D /* Pods_cfgTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cfgTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7D08D6F879461F3BD74280 /* Pods_cfg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cfg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D1BFCD10A99A5F736C80141 /* Pods-cfg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cfg.release.xcconfig"; path = "Target Support Files/Pods-cfg/Pods-cfg.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,11 +131,13 @@
 				1B9F8712233F09CE003D9A35 /* MapViewController.swift */,
 				1B9F8714233F1C4E003D9A35 /* ProfileViewController.swift */,
 				1B9F8716233F2269003D9A35 /* DetailsViewController.swift */,
+				1B9F8718233F3252003D9A35 /* MeetingsTableViewCell.swift */,
 				1B9F86E4233EF083003D9A35 /* Main.storyboard */,
 				1B9F86E7233EF085003D9A35 /* Assets.xcassets */,
 				1B9F86E9233EF085003D9A35 /* LaunchScreen.storyboard */,
 				1B9F86EC233EF085003D9A35 /* Info.plist */,
 				1B9F870E233EF666003D9A35 /* GoogleService-Info.plist */,
+				1B9F871A233F3322003D9A35 /* Meeting.swift */,
 			);
 			path = cfg;
 			sourceTree = "<group>";
@@ -447,11 +453,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9F871B233F3322003D9A35 /* Meeting.swift in Sources */,
 				1B9F8711233EF926003D9A35 /* LoginViewController.swift in Sources */,
 				1B9F8713233F09CE003D9A35 /* MapViewController.swift in Sources */,
 				1B9F8715233F1C4E003D9A35 /* ProfileViewController.swift in Sources */,
 				1B9F86E1233EF083003D9A35 /* AppDelegate.swift in Sources */,
 				1B9F8717233F2269003D9A35 /* DetailsViewController.swift in Sources */,
+				1B9F8719233F3252003D9A35 /* MeetingsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
