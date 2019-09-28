@@ -170,6 +170,27 @@
             </objects>
             <point key="canvasLocation" x="1760.8" y="137.4384236453202"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="TDn-Hj-4OQ">
+            <objects>
+                <viewController id="oMB-Db-PbS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vtC-vT-lvI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="survey" translatesAutoresizingMaskIntoConstraints="NO" id="yOe-l2-RzW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cz5-rr-ryc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eB7-yW-I5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2781.5999999999999" y="275.61576354679806"/>
+        </scene>
         <!--Details View Controller-->
         <scene sceneID="Vig-Go-UEc">
             <objects>
@@ -443,6 +464,7 @@
         <image name="img" width="192" height="192"/>
         <image name="profile" width="71" height="71"/>
         <image name="profileBackground" width="375" height="207"/>
+        <image name="survey" width="598" height="1296"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="c5A-vH-i7j"/>
