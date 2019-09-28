@@ -1,7 +1,10 @@
 package com.example.codeforgood;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -58,9 +61,22 @@ public class FindPeopleActivity extends AppCompatActivity implements OnMapReadyC
                 .position(BRISBANE)
                 .title("Brisbane"));
         mBrisbane.setTag(0);
-
         // Set a listener for marker click.
         mMap.setOnMarkerClickListener(this);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(canAccessLocation()){
+            mMap.setMyLocationEnabled(true);
+        }
+    }
+    private boolean hasPermission(String perm) {
+        return(PackageManager.PERMISSION_GRANTED==checkSelfPermission(perm));
+    }
+    private boolean canAccessLocation() {
+        return(hasPermission(Manifest.permission.ACCESS_FINE_LOCATION));
     }
 
     /** Called when the user clicks a marker. */
