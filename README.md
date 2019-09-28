@@ -17,3 +17,12 @@ The following requirements / functionality are taken into consideration and comp
 - The user's are asked to register for the meeting.
 - Google Hangouts are used for the meeting. 
  
+
+**Developers**
+
+- Helal Chowdhury
+- Smit Shah
+- Catherine Lin
+- Sulbha Aggarwal
+- Logan Le
+- Eric Schneider
