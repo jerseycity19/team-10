@@ -61,15 +61,17 @@ The following requirements / functionality are taken into consideration and comp
 **Images** :-
 
  ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
+ 
+ - Front Page :-
+ 
 <div style="display: inline-block;">
   <img src="https://github.com/jerseycity19/team-10/blob/master/filter.png"  width="200">
-  <img src="https://github.com/jerseycity19/team-10/blob/master/survey.png"  width="200">
  <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
 
 
- - iOS Application
+ - iOS Application :-
  
  <div style="display: inline-block;">
    <img src="https://github.com/jerseycity19/team-10/blob/master/iOS%20Application.png"  width="200">
@@ -77,10 +79,18 @@ The following requirements / functionality are taken into consideration and comp
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
 
-- Android Application 
+- Android Application :- 
 
 <div style="display: inline-block;">
    <img src="https://github.com/jerseycity19/team-10/blob/master/Android%20Application.png"  width="200">
+ <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+
+- Survey :- 
+
+<div style="display: inline-block;">
+   <img src="https://github.com/jerseycity19/team-10/blob/master/survey.png"  width="200">
  <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
