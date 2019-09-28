@@ -11,12 +11,9 @@ import UIKit
 class MeetingsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var meetingImageView: UIImageView!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var dayLabel: UILabel!
     func setMeetings(event: Meeting) {
         meetingImageView.image = event.image
-        dateLabel.text = event.date
-        dayLabel.text = event.day
+
     }
     
 }
