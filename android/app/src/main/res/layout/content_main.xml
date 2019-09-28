@@ -8,6 +8,7 @@
     tools:context=".HomeActivity"
     tools:showIn="@layout/home_activity">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
