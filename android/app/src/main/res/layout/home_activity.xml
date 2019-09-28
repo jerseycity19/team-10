@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
@@ -7,119 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="417dp"
-        android:layout_height="306dp"
-        android:layout_x="0dp"
-        android:layout_y="-50dp"
-        android:src="@drawable/background" />
+    <include layout="@layout/content_main"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="151dp"
-        android:layout_height="157dp"
-        android:layout_x="129dp"
-        android:layout_y="120dp"
-        android:src="@drawable/profile_pic" />
-
-    <TextView
-        android:id="@+id/name_id"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="158dp"
-        android:layout_y="242dp"
-        android:text="Meng Shi"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/email_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="119dp"
-        android:layout_y="278dp"
-        android:text="hellonyc2019@gmail.com" />
-
-    <TextView
-        android:id="@+id/event_value"
-        android:layout_width="46dp"
-        android:layout_height="30dp"
-        android:layout_x="23dp"
-        android:layout_y="309dp"
-        android:gravity="center"
-        android:text="4"
-        android:textColor="#458B00"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/events_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="25dp"
-        android:layout_y="352dp"
-        android:gravity="center"
-        android:text="Events"
-        android:textStyle="bold"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/Points_value"
-        android:layout_width="46dp"
-        android:layout_height="30dp"
-        android:layout_x="171dp"
-        android:layout_y="310dp"
-        android:gravity="center"
-        android:text="53"
-        android:textColor="#458B00"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/points_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="174dp"
-        android:layout_y="354dp"
-        android:gravity="center"
-        android:text="Points"
-        android:textStyle="bold"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/friends_value"
-        android:layout_width="46dp"
-        android:layout_height="30dp"
-        android:layout_x="313dp"
-        android:layout_y="312dp"
-        android:gravity="center"
-        android:text="31"
-        android:textColor="#458B00"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/friends_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="312dp"
-        android:layout_y="352dp"
-        android:gravity="center"
-        android:text="Friends"
-        android:textStyle="bold"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/UpComingEvents_tv"
-        android:layout_width="190dp"
-        android:layout_height="35dp"
-        android:layout_x="7dp"
-        android:layout_y="394dp"
-        android:text="Upcoming Events"
-        android:textStyle="bold"
-        android:textSize="20dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="10dp"
+        app:fabSize="mini"
+        android:src="@drawable/survey_24px"
+        android:baselineAlignBottom="true"
+        android:layout_alignParentRight="true"/>
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/eventRV"
-        android:layout_width="match_parent"
-        android:layout_height="272dp"
-        android:layout_x="5dp"
-        android:layout_y="433dp"/>
+</RelativeLayout>
 
-</AbsoluteLayout>
+

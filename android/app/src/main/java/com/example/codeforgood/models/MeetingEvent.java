@@ -3,13 +3,13 @@ package com.example.codeforgood.models;
 public class MeetingEvent {
     private String url;
     private String imagePath;
-    private int month;
+    private String day;
     private String date;
 
-    public MeetingEvent(String url, int month, String date, String imagePath) {
+    public MeetingEvent(String url, String day, String date, String imagePath) {
         this.url = url;
         this.imagePath = imagePath;
-        this.month = month;
+        this.day = day;
         this.date = date;
     }
 
@@ -32,12 +32,12 @@ public class MeetingEvent {
         this.imagePath = imagePath;
     }
 
-    public int getMonth() {
-        return month;
+    public String getDay() {
+        return day;
     }
 
-    public void setMonth(int month) {
-        this.month = month;
+    public void setDay(int month) {
+        this.day = day;
     }
 
     public String getDate() {

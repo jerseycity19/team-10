@@ -1,14 +1,11 @@
 package com.example.codeforgood.UI_Components;
 
 import android.content.Context;
-import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.codeforgood.R;
@@ -29,19 +26,19 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView monthtv, dateTv;
+        private TextView dayTv, dateTv;
         private ImageView imageView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            monthtv = itemView.findViewById(R.id.month_id);
+            dayTv = itemView.findViewById(R.id.day_id);
             dateTv = itemView.findViewById(R.id.Date_id);
             imageView = itemView.findViewById(R.id.eventPosterId);
         }
 
         void bind(MeetingEvent meetingEvent) {
 
-            monthtv.setText(String.valueOf(meetingEvent.getMonth()));
+            dayTv.setText(String.valueOf(meetingEvent.getDay()));
             dateTv.setText(meetingEvent.getDate());
             Glide.with(context).load(meetingEvent.getImagePath()).into(imageView);
 
