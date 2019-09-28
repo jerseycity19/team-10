@@ -17,10 +17,85 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="151dp"
         android:layout_height="157dp"
-        android:layout_x="121dp"
-        android:layout_y="130dp"
+        android:layout_x="129dp"
+        android:layout_y="120dp"
         android:src="@drawable/profile_pic" />
 
+    <TextView
+        android:id="@+id/name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="158dp"
+        android:layout_y="242dp"
+        android:text="Meng Shi"
+        android:textSize="20dp" />
 
+    <TextView
+        android:id="@+id/email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="119dp"
+        android:layout_y="278dp"
+        android:text="hellonyc2019@gmail.com" />
+
+    <TextView
+        android:id="@+id/event_value"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_x="23dp"
+        android:layout_y="309dp"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/events_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="352dp"
+        android:gravity="center"
+        android:text="Events"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/Points_value"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_x="171dp"
+        android:layout_y="310dp"
+        android:gravity="center"
+        android:text="53"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="174dp"
+        android:layout_y="354dp"
+        android:gravity="center"
+        android:text="Points"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/friends_value"
+        android:layout_width="46dp"
+        android:layout_height="30dp"
+        android:layout_x="313dp"
+        android:layout_y="312dp"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/friends_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="312dp"
+        android:layout_y="352dp"
+        android:gravity="center"
+        android:text="Friends"
+        android:textSize="15dp" />
 
 </AbsoluteLayout>
