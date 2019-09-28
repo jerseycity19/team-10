@@ -29,6 +29,7 @@ The following requirements / functionality are taken into consideration and comp
 <div style="display: inline-block;">
   <img src="https://github.com/jerseycity19/team-10/blob/master/filter.png"  width="200">
   <img src="https://github.com/jerseycity19/team-10/blob/master/pro.png"  width="200">
+ <img src="https://github.com/jerseycity19/team-10/blob/master/survey.png"  width="200">
  <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
