@@ -259,6 +259,7 @@
                                     <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonClicked:" destination="KHl-RU-7YN" eventType="touchUpInside" id="OSl-dD-fhC"/>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="c4u-PZ-aN0"/>
                                 </connections>
                             </button>
