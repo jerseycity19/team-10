@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-    <include layout="@layout/content_main"/>
+    <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/survey_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -19,7 +20,6 @@
         android:src="@drawable/survey_24px"
         android:baselineAlignBottom="true"
         android:layout_alignParentRight="true"/>
-
 
 </RelativeLayout>
 
