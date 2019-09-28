@@ -23,6 +23,6 @@ The following requirements / functionality are taken into consideration and comp
 - Helal Chowdhury      
 - Smit Shah            
 - Catherine Lin        
-- Sulbha Aggarwal      (https://mail.google.com/mail/u/0?ui=2&ik=1ed664f1d1&attid=0.4&permmsgid=msg-f:1645913313201235477&th=16d775701c722615&view=att&disp=safe&realattid=f_k13e5il13) 
-- Logan Le             (https://mail.google.com/mail/u/0?ui=2&ik=1ed664f1d1&attid=0.1&permmsgid=msg-f:1645914042616591585&th=16d77619f0fd34e1&view=att&disp=safe&realattid=16d77616820174be84e1)
-- Eric Schneider       (https://mail.google.com/mail/u/0?ui=2&ik=1ed664f1d1&attid=0.6&permmsgid=msg-f:1645913313201235477&th=16d775701c722615&view=att&disp=safe&realattid=f_k13e5ilr5)
+- Sulbha Aggarwal      
+- Logan Le             
+- Eric Schneider       
