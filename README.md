@@ -60,7 +60,7 @@ The following requirements / functionality are taken into consideration and comp
  
 **Images** :-
 
- ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
+ ## [Video Walkthrough](https://drive.google.com/file/d/0B8nY81L7eLmtLVlPNURHaXJqTXFkR2Via21Ec2hFZTRmSHpB/view?ts=5d8f4f3b)
  
  - Front Page :-
  
