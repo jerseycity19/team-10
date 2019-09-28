@@ -47,7 +47,7 @@
         android:gravity="center"
         android:text="4"
         android:textColor="#458B00"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/events_tv"
@@ -58,7 +58,7 @@
         android:gravity="center"
         android:text="Events"
         android:textStyle="bold"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/Points_value"
@@ -69,7 +69,7 @@
         android:gravity="center"
         android:text="53"
         android:textColor="#458B00"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/points_tv"
@@ -80,7 +80,7 @@
         android:gravity="center"
         android:text="Points"
         android:textStyle="bold"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/friends_value"
@@ -91,7 +91,7 @@
         android:gravity="center"
         android:text="31"
         android:textColor="#458B00"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/friends_tv"
@@ -102,7 +102,7 @@
         android:gravity="center"
         android:text="Friends"
         android:textStyle="bold"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/UpComingEvents_tv"
