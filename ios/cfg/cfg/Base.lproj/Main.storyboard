@@ -146,7 +146,17 @@
                                 </state>
                                 <connections>
                                     <action selector="tapBegin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIG-Gb-a0A"/>
-                                    <segue destination="oMB-Db-PbS" kind="showDetail" id="h9y-nQ-r5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-Wl-68R">
+                                <rect key="frame" x="21" y="754" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Take Survey">
+                                    <color key="titleColor" red="0.20317763690000001" green="0.63899402819999995" blue="0.77670923219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oMB-Db-PbS" kind="showDetail" id="Rkd-mX-Twq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-gp-ZPC">
