@@ -80,7 +80,7 @@ class MapViewController: UIViewController {
         
         let col = MKPointAnnotation()
         col.title = "Mental Health Discussion"
-        col.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
+        col.coordinate = CLLocationCoordinate2D(latitude: 48.7806, longitude: 2.2376)
         
         let col2 = MKPointAnnotation()
         col2.title = "Mental Health Discussion"
@@ -88,7 +88,7 @@ class MapViewController: UIViewController {
         
         let col3 = MKPointAnnotation()
         col3.title = "Mental Health Discussion"
-        col3.coordinate = CLLocationCoordinate2D(latitude: 48.8630, longitude: 2.3599)
+        col3.coordinate = CLLocationCoordinate2D(latitude: 48.9030, longitude: 2.3599)
         
         mapView.addAnnotation(timesSqaureAnnotation)
         mapView.addAnnotation(empireStateAnnotation)
