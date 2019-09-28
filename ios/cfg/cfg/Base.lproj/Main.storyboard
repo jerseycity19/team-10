@@ -439,6 +439,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="yM4-pI-VTl" id="Vs8-Ig-j99"/>
+                                            <outlet property="pointsLabel" destination="2ht-D7-M9d" id="SPq-ER-POT"/>
+                                            <outlet property="profileView" destination="mbu-AV-tbj" id="93S-Bv-Aa4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -446,6 +451,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="qPH-nH-CVl"/>
                     </view>
+                    <connections>
+                        <outlet property="contactListTableView" destination="929-4U-8KP" id="Snx-fP-H86"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TaK-dn-v55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
