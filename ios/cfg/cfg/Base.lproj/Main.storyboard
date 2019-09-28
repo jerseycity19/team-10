@@ -108,7 +108,7 @@
         <!--MapView-->
         <scene sceneID="gbX-6y-6Dz">
             <objects>
-                <viewController title="MapView" id="muv-wT-iLe" sceneMemberID="viewController">
+                <viewController title="MapView" id="muv-wT-iLe" customClass="MapViewController" customModule="cfg" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hDc-sy-h9p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kWc-FM-7ms"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="E50-Zk-tHI" id="MtD-ex-gCD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXS-np-d2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
