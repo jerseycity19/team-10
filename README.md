@@ -14,4 +14,5 @@
 
 The following requirements / functionality are taken into consideration and completion:-
 
-- 
+- The user's are asked to register for the meeting at Login Page.
+- Google Hangouts are used to used for the meeting
