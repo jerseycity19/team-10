@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/coordinatorLayout"
@@ -7,114 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="417dp"
+        android:layout_height="306dp"
+        android:layout_x="0dp"
+        android:layout_y="-50dp"
+        android:src="@drawable/background" />
 
-    <EditText
-        android:id="@+id/meetingTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:inputType="textPersonName"
-        android:text="Meetings"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <EditText
-        android:id="@+id/pointTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:inputType="textPersonName"
-        android:text="Points"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/friendTv"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/meetingTv"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <EditText
-        android:id="@+id/friendTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:inputType="textPersonName"
-        android:text="Friends"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="357dp" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="151dp"
+        android:layout_height="157dp"
+        android:layout_x="121dp"
+        android:layout_y="130dp"
+        android:src="@drawable/profile_pic" />
 
 
-    <ImageView
-        android:id="@+id/background_img"
-        android:layout_width="450dp"
-        android:layout_height="417dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-94dp"
-        tools:srcCompat="@drawable/background" />
 
-    <ImageView
-        android:id="@+id/profile_pic"
-        android:layout_width="233dp"
-        android:layout_height="188dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="126dp"
-        tools:srcCompat="@drawable/profile_pic" />
-
-    <TextView
-        android:id="@+id/Event_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Meng Shi"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="267dp" />
-
-    <TextView
-        android:id="@+id/emailTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hellonyc2019@gmail.com"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="304dp" />
-
-    <TextView
-        android:id="@+id/meeting_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="4"
-        android:textColor="#00FF00"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/meetingTv"
-        app:layout_constraintStart_toStartOf="@+id/meetingTv"
-        tools:layout_editor_absoluteY="328dp" />
-
-    <TextView
-        android:id="@+id/point_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="53"
-        android:textColor="#00FF00"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/pointTv"
-        app:layout_constraintStart_toStartOf="@+id/pointTv"
-        tools:layout_editor_absoluteY="328dp" />
-
-
-    <TextView
-        android:id="@+id/friends_value"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="31"
-        android:textColor="#00FF00"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/friendTv"
-        app:layout_constraintStart_toStartOf="@+id/friendTv"
-        tools:layout_editor_absoluteY="328dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</AbsoluteLayout>
