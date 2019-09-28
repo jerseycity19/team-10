@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.example.codeforgood.R;
@@ -34,14 +35,15 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
         public ViewHolder(View itemView) {
             super(itemView);
             monthtv = itemView.findViewById(R.id.month_id);
-            dateTv = itemView.findViewById(R.id.date);
+            dateTv = itemView.findViewById(R.id.Date_id);
             imageView = itemView.findViewById(R.id.eventPosterId);
         }
 
         void bind(MeetingEvent meetingEvent) {
+
             monthtv.setText(String.valueOf(meetingEvent.getMonth()));
-//            dateTv.setText(meetingEvent.getDate());
-//            Glide.with(context).load(meetingEvent.getImagePath()).into(imageView);
+            dateTv.setText(meetingEvent.getDate());
+            Glide.with(context).load(meetingEvent.getImagePath()).into(imageView);
 
 //            container.setOnClickListener(v -> {
 //                Intent intent = new Intent(context, DetailActivity.class);

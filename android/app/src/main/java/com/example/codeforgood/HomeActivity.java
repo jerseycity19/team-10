@@ -27,10 +27,10 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
         meetingEvents = new ArrayList<>();
-        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
-        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
-        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
-        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",4,"Mon","https://musicoomph.com/wp-content/uploads/2018/03/benefits-of-going-to-live-music-concerts.jpg"));
+        meetingEvents.add(new MeetingEvent("",5,"Wed","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",9,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",10,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
         initRecylerView();
     }
 
