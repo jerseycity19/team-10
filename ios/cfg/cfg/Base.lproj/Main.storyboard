@@ -364,10 +364,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-8t-xSt">
-                                <rect key="frame" x="154" y="741" width="69" height="47"/>
+                                <rect key="frame" x="103" y="741" width="171" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <state key="normal" title="Meet">
+                                <state key="normal" title="Search More">
                                     <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -589,7 +589,7 @@
         <image name="survey" width="598" height="1296"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NJL-uz-y6W"/>
-        <segue reference="qgr-N5-HL2"/>
+        <segue reference="c5A-vH-i7j"/>
+        <segue reference="0mg-Nx-7km"/>
     </inferredMetricsTieBreakers>
 </document>
