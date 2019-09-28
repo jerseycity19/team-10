@@ -11,7 +11,7 @@ app.get('/newhost', async (req, res) => {
     client.connect(function(err) {
         const db = client.db(dbName);
         db.collection("hosts").insert({
-            url: generateHangoutsUrl(),
+            url: await generateHangoutsUrl(),
             locations: {
                 lat: req.params.lat,
                 lng: req.params.lng
@@ -20,6 +20,10 @@ app.get('/newhost', async (req, res) => {
         })
     })
 });
+
+async function generateHangoutsUrl(){
+
+}
 
 app.get('/hosts', async (req, res) => {
     const client = new MongoClient(url);
@@ -51,7 +55,8 @@ app.get('/user/addFriend/:friendID', async(req, res)  => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collections("friends").insert(await getUserIdPair(req.params.userDiff), function (err, doc) {
+        x = (await getUserIdPair(req.params.userDiff));
+        db.collections("friends").insert(x, function (err, doc) {
             if(err){
                 console.log(err)
             }
