@@ -9,3 +9,9 @@
 **Build With** Swift, Android Studio
 
 **Frameworks** 
+
+**User Stories** 
+
+The following requirements / functionality are taken into consideration and completion:-
+
+- 
