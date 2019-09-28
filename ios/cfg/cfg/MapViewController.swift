@@ -29,6 +29,19 @@ class MapViewController: UIViewController {
         
     }
     
+    func mapSetup() {
+        self.mapView.mapType = .hybridFlyover
+        self.mapView.showsBuildings = true
+        self.mapView.isZoomEnabled = true
+        self.mapView.isScrollEnabled = true
+        
+        let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 60000, pitch: 45.0, headingStep: 40.0))
+        camera.start(flyover: FlyoverAwesomePlace.newYork)
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(20), execute:{
+            camera.stop()
+        })
+    }
+    
     func userLocationSetup(){
         locationManager.requestAlwaysAuthorization() //we can ask this later
         locationManager.startUpdatingLocation()
@@ -90,7 +103,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-        showRoute()
+//        showRoute()
         let annView = view.annotation
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
