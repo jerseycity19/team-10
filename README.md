@@ -21,8 +21,8 @@ The following requirements / functionality are taken into consideration and comp
 **Developers**
 
 - Helal Chowdhury      (https://mail.google.com/mail/u/1?ui=2&ik=1ed664f1d1&attid=0.2&permmsgid=msg-                f:1645913313201235477&th=16d775701c722615&view=att&disp=safe&realattid=f_k13e5ik21)
-- Smit Shah                
-- Catherine Lin
+- Smit Shah            https://mail.google.com/mail/u/0?ui=2&ik=1ed664f1d1&attid=0.3&permmsgid=msg-f:1645913313201235477&th=16d775701c722615&view=att&disp=safe&realattid=f_k13e5iki2)    
+- Catherine Lin       
 - Sulbha Aggarwal
 - Logan Le
 - Eric Schneider
