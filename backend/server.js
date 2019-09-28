@@ -9,29 +9,32 @@ var url =  "mongodb://songenwang.com:27017";
 app.get('/newhost', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
+        hUrl = "hangouts.google.com/p14c3h01d";//await generateHangoutsUrl();
         const db = client.db(dbName);
         db.collection("hosts").insert({
-            url: await generateHangoutsUrl(),
+            url: hUrl,
             locations: {
                 lat: req.params.lat,
                 lng: req.params.lng
             },
             Time: req.params.time
-        })
+        }).then( () => {
+            return res.json({"sent":"True"})
+        });
     })
 });
-
+/*
 async function generateHangoutsUrl(){
 
 }
-
+*/
 app.get('/hosts', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
         db.collection("hosts").find({time:"10/2/19 at 2:20pm"}, function (err, doc) {
             doc.toArray( function(err, data){
-                console.log(data);
+                res.send(data);
             });
         });
         client.close();
@@ -51,19 +54,6 @@ app.get('/newUser', async (req, res) => {
     });
 });
 
-app.get('/user/addFriend/:friendID', async(req, res)  => {
-    const client = new MongoClient(url);
-    client.connect(function(err) {
-        const db = client.db(dbName);
-        x = (await getUserIdPair(req.params.userDiff));
-        db.collections("friends").insert(x, function (err, doc) {
-            if(err){
-                console.log(err)
-            }
-        });
-    })
-});
-
 async function getUserIdPair(pair){
     return new Promise( async (resolve, reject) => {
         try {
@@ -81,10 +71,25 @@ async function getUserIdPair(pair){
 
         }
         catch(err){
-            console.log(err)
+            reject(err);
         }
     });
 }
+
+app.get('/user/addFriend/:friendID', async(req, res)  => {
+    const client = new MongoClient(url);
+    client.connect(async (err) => {
+        const db = client.db(dbName);
+        x = await getUserIdPair(req.params.userDiff);
+        db.collections("friends").insert(x, function (err, doc) {
+            if(err){
+                console.log(err)
+            }
+        });
+    })
+});
+
+
 
 app.get('/user/:id', function(req, res) { 
     const client = new MongoClient(url);
