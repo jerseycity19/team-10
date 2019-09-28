@@ -71,7 +71,7 @@ The following requirements / functionality are taken into consideration and comp
 - Logan Le 
 
 <div style="display: inline-block;">
-  <img src="https://github.com/jerseycity19/team-10/blob/master/Logan%20Le.jpg"  width="200">
+  <img src="https://github.com/jerseycity19/team-10/blob/master/Logan%20Le%20.jpg"  width="200">
  <!-- <img src="assets/"  width="295"> -->
   <!-- <img src="assets/"  width="400"> -->
 </div><br/>
