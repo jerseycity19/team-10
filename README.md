@@ -27,7 +27,6 @@ The following requirements / functionality are taken into consideration and comp
 
  ## [Video Walkthrough](https://drive.google.com/file/d/15Emb15vuooPL-Ng8_mLbU2g3ckXF1Lmp/view?usp=sharing)
 <div style="display: inline-block;">
-  <img src="https://github.com/jerseycity19/team-10/blob/master/Screen%20Shot%202019-09-28%20at%206.02.10%20AM.png"  width="200">
   <img src="https://github.com/jerseycity19/team-10/blob/master/filter.png"  width="200">
   <img src="https://github.com/jerseycity19/team-10/blob/master/pro.png"  width="200">
  <!-- <img src="assets/"  width="295"> -->
