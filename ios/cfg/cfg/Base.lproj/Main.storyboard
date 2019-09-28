@@ -96,9 +96,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-KU-YnC">
-                                <rect key="frame" x="0.0" y="44" width="86" height="30"/>
+                                <rect key="frame" x="303" y="479" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Meet People"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Meet People">
+                                    <color key="titleColor" red="0.50533828449999996" green="0.77670923219999999" blue="0.56942497000000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="C8V-yd-SVZ" kind="showDetail" id="4ob-nv-K44"/>
                                 </connections>
