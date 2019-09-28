@@ -52,10 +52,10 @@ class MapViewController: UIViewController {
         mapView.mapType = MKMapType.hybrid
     }
     
-    func zoomIn(_ coordinate: CLLocationCoordinate2D){
-        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        mapView.setRegion(zoomRegion, animated: true)
-    }
+//    func zoomIn(_ coordinate: CLLocationCoordinate2D){
+//        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+//        mapView.setRegion(zoomRegion, animated: true)
+//    }
     
     func addAnnotations(){
         let timesSqaureAnnotation = MKPointAnnotation()
@@ -79,16 +79,16 @@ class MapViewController: UIViewController {
         jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
         
         let col = MKPointAnnotation()
-        col.title = "It's My real Park"
-        col.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
+        col.title = "Mental Health Discussion"
+        col.coordinate = CLLocationCoordinate2D(latitude: 48.7806, longitude: 2.2376)
         
         let col2 = MKPointAnnotation()
-        col2.title = "It's not My Park"
+        col2.title = "Mental Health Discussion"
         col2.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3476)
         
         let col3 = MKPointAnnotation()
-        col3.title = "It's  is My Park"
-        col3.coordinate = CLLocationCoordinate2D(latitude: 48.8630, longitude: 2.3599)
+        col3.title = "Mental Health Discussion"
+        col3.coordinate = CLLocationCoordinate2D(latitude: 48.9030, longitude: 2.3599)
         
         mapView.addAnnotation(timesSqaureAnnotation)
         mapView.addAnnotation(empireStateAnnotation)
