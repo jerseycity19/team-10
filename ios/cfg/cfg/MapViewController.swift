@@ -78,6 +78,18 @@ class MapViewController: UIViewController {
         jersey.title = "It's My Park"
         jersey.coordinate = CLLocationCoordinate2D(latitude: 40.7178, longitude: -74.0431)
         
+        let col = MKPointAnnotation()
+        col.title = "It's My real Park"
+        col.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
+        
+        let col2 = MKPointAnnotation()
+        col2.title = "It's not My Park"
+        col2.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3476)
+        
+        let col3 = MKPointAnnotation()
+        col3.title = "It's  is My Park"
+        col3.coordinate = CLLocationCoordinate2D(latitude: 48.8630, longitude: 2.3599)
+        
         mapView.addAnnotation(timesSqaureAnnotation)
         mapView.addAnnotation(empireStateAnnotation)
         mapView.addAnnotation(brooklynBridge)
@@ -86,14 +98,8 @@ class MapViewController: UIViewController {
         
      
 
-        let col = MKPointAnnotation()
-        jersey.title = "It's My Park"
-        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
         
-        let col2 = MKPointAnnotation()
-        jersey.title = "It's My Park"
-        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8706, longitude: 2.4376)
-
+        mapView.addAnnotation(col3)
         mapView.addAnnotation(col2)
         mapView.addAnnotation(col)
         
