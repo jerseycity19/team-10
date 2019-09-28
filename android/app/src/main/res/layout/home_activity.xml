@@ -46,6 +46,7 @@
         android:layout_y="309dp"
         android:gravity="center"
         android:text="4"
+        android:textColor="#458B00"
         android:textSize="15dp" />
 
     <TextView
@@ -56,6 +57,7 @@
         android:layout_y="352dp"
         android:gravity="center"
         android:text="Events"
+        android:textStyle="bold"
         android:textSize="15dp" />
 
     <TextView
@@ -66,6 +68,7 @@
         android:layout_y="310dp"
         android:gravity="center"
         android:text="53"
+        android:textColor="#458B00"
         android:textSize="15dp" />
 
     <TextView
@@ -76,6 +79,7 @@
         android:layout_y="354dp"
         android:gravity="center"
         android:text="Points"
+        android:textStyle="bold"
         android:textSize="15dp" />
 
     <TextView
@@ -85,7 +89,8 @@
         android:layout_x="313dp"
         android:layout_y="312dp"
         android:gravity="center"
-        android:text="4"
+        android:text="31"
+        android:textColor="#458B00"
         android:textSize="15dp" />
 
     <TextView
@@ -96,6 +101,24 @@
         android:layout_y="352dp"
         android:gravity="center"
         android:text="Friends"
+        android:textStyle="bold"
         android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/UpComingEvents_tv"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:layout_x="7dp"
+        android:layout_y="394dp"
+        android:text="Upcoming Events"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="3dp"
+        android:layout_y="438dp" />
+
 
 </AbsoluteLayout>
