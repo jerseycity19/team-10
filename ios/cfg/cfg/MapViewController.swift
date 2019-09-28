@@ -52,10 +52,10 @@ class MapViewController: UIViewController {
         mapView.mapType = MKMapType.hybrid
     }
     
-    func zoomIn(_ coordinate: CLLocationCoordinate2D){
-        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
-        mapView.setRegion(zoomRegion, animated: true)
-    }
+//    func zoomIn(_ coordinate: CLLocationCoordinate2D){
+//        let zoomRegion = MKCoordinateRegion(center: coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+//        mapView.setRegion(zoomRegion, animated: true)
+//    }
     
     func addAnnotations(){
         let timesSqaureAnnotation = MKPointAnnotation()
