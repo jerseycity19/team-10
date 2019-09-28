@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Filter</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+		* element that contains the map. */
+		#map {
+		height: 100%;
+		width: 100%;
+		}
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		}
+		#filter-left {
+			height: 100%;
+			width: 20%;
+			position:absolute;
+			left:0px;
+		}
+		#filter-right {
+			width: 80%;
+			height: 100%;
+			position:absolute;
+			left:20%;
+		}
+	</style>
+	</head>
+	<body>
+	<div id="filter-left"></div>
+	<div id = "filter-right">
+		<div id="map"></div>
+	</div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+		});
+		var uluru = {lat: -25.344, lng: 131.036};
+		var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+    </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyApK2pVNPdQmn6hJ3QaJQe_eA7iaVtwaiY&callback=initMap" 
+	async defer></script>
+	
+</body>
+</html>
