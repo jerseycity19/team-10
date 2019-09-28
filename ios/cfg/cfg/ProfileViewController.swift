@@ -18,7 +18,11 @@ class ProfileViewController: UIViewController {
 
     }
     @IBAction func tapBegin(_ sender: Any) {
-        UIApplication.shared.openURL(NSURL(string: "https://hangouts.google.com/call/coYtJmhhuN5CMkLkdxlIAEEE")! as URL)
+//        UIApplication.shared.openURL(NSURL(string: "https://hangouts.google.com/call/coYtJmhhuN5CMkLkdxlIAEEE")! as URL)
+        
+        if let url = NSURL(string: "https://hangouts.google.com/call/coYtJmhhuN5CMkLkdxlIAEEE") {
+            UIApplication.shared.openURL(url as URL)
+        }
     }
     
    
