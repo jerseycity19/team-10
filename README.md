@@ -57,6 +57,9 @@ The following requirements / functionality are taken into consideration and comp
 - The user's are asked to register for the meeting.
 - It will ask user to fill out the form to register for the meeting.
 - Google Hangouts is the best suitable software we came up with to use for the meeting.
+- It dosen't have any specifications to run only on android app or iOS app. 
+- It can connect to meeting not only for Android to Android or iOS to iOS but it work for Android to iOS application or vice-   versa. 
+- 
 
  
  
