@@ -61,5 +61,12 @@ The following requirements / functionality are taken into consideration and comp
 </div><br/>
 
 - Catherine Lin 
+
+<div style="display: inline-block;">
+  <img src="https://github.com/jerseycity19/team-10/blob/master/Catherine%20Lin.jpg"  width="200">
+ <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+
 - Logan Le             
 - Eric Schneider       
