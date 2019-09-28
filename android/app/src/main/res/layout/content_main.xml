@@ -121,9 +121,18 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/eventRV"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_x="2dp"
-        android:layout_y="430dp" />
+        android:layout_height="320dp"
+        android:layout_x="4dp"
+        android:layout_y="423dp" />
+
+    <TextView
+        android:id="@+id/meetPeople_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="302dp"
+        android:layout_y="278dp"
+        android:text="Meeting People"
+        android:textColor="#32CD32" />
 
 
 </AbsoluteLayout>
