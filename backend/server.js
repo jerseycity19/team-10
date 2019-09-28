@@ -38,18 +38,57 @@ app.get('/newUser', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collection("hosts").find({time:"10/2/19 at 2:20pm"}, function (err, doc) {
-            doc.toArray( function(err, data){
-                console.log(data);
-            });
+        db.collection("users").insert(req.params.userObj, function (err, doc) {
+           if(err){
+               console.log(err);
+           } 
         });
         client.close();
     });
 });
 
+app.get('/user/addFriend/:friendID', async(req, res)  => {
+    const client = new MongoClient(url);
+    client.connect(function(err) {
+        const db = client.db(dbName);
+        db.collections("friends").insert(await getUserIdPair(req.params.userDiff), function (err, doc) {
+            if(err){
+                console.log(err)
+            }
+        });
+    })
+});
+
+async function getUserIdPair(pair){
+    return new Promise( async (resolve, reject) => {
+        try {
+            let u1 = pair.one;
+            let u2 = pair.two;
+
+            db.collections("users").findOne(pair.one).then( (doc) => {
+                u1 = doc._id;
+            });
+            db.collections("users").findOne(pair.two).then( (doc) => {
+                u2 = doc._id;
+            })
+
+            resolve({one:u1, two:u2});
+
+        }
+        catch(err){
+            console.log(err)
+        }
+    });
+}
+
 app.get('/user/:id', function(req, res) { 
-    
-    return res.send({"num":id});
+    const client = new MongoClient(url);
+    client.connect(function(err) {
+        const db = client.db(dbName);
+        db.collections("users").findOne(req.params.id).then( (doc) => {
+            return res.send(doc);
+        })
+    })
 });
 
 app.get('/', function (req, res) {
