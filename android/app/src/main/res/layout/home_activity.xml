@@ -104,4 +104,17 @@
         app:layout_constraintEnd_toEndOf="@+id/pointTv"
         app:layout_constraintStart_toStartOf="@+id/pointTv"
         tools:layout_editor_absoluteY="328dp" />
+
+
+    <TextView
+        android:id="@+id/friends_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="31"
+        android:textColor="#00FF00"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/friendTv"
+        app:layout_constraintStart_toStartOf="@+id/friendTv"
+        tools:layout_editor_absoluteY="328dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
