@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+import FlyoverKit
+import Speech
 
 class MapViewController: UIViewController {
 

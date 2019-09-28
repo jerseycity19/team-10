@@ -120,12 +120,12 @@
 			children = (
 				1B9F86E0233EF083003D9A35 /* AppDelegate.swift */,
 				1B9F8710233EF926003D9A35 /* LoginViewController.swift */,
+				1B9F8712233F09CE003D9A35 /* MapViewController.swift */,
 				1B9F86E4233EF083003D9A35 /* Main.storyboard */,
 				1B9F86E7233EF085003D9A35 /* Assets.xcassets */,
 				1B9F86E9233EF085003D9A35 /* LaunchScreen.storyboard */,
 				1B9F86EC233EF085003D9A35 /* Info.plist */,
 				1B9F870E233EF666003D9A35 /* GoogleService-Info.plist */,
-				1B9F8712233F09CE003D9A35 /* MapViewController.swift */,
 			);
 			path = cfg;
 			sourceTree = "<group>";
