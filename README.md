@@ -55,14 +55,12 @@ UIKit, MapKit, CoreLocation, FlyoverKit, UserNotifications, EventKit, Contacts, 
 The following requirements / functionality are taken into consideration and completion:-
 
 - The user's are asked to register for the meeting.
-- It will ask user to fill out the form to register for the meeting.
 - Google Hangouts is the best suitable software we came up with to use for the meeting.
 - It dosen't have any specifications to run only on android app or iOS app. 
 - It can connect to meeting not only for Android to Android or iOS to iOS but it work for Android to iOS application or vice-   versa. 
-- 
+- Hence, overall this application is very much useful in real world problem.
 
- 
- 
+  
 **Images** :-
 
  ## [Video Walkthrough](https://drive.google.com/file/d/0B8nY81L7eLmtLVlPNURHaXJqTXFkR2Via21Ec2hFZTRmSHpB/view?ts=5d8f4f3b)
