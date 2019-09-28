@@ -12,27 +12,30 @@ app.get('/newhost', async (req, res) => {
         hUrl = "hangouts.google.com/p14c3h01d";//await generateHangoutsUrl();
         const db = client.db(dbName);
         db.collection("hosts").insert({
-            url: hUrl,
-            locations: {
-                lat: req.params.lat,
-                lng: req.params.lng
+            "url": hUrl,
+            "locations": {
+                "lat": req.params.lat,
+                "lng": req.params.lng,
             },
-            Time: req.params.time
+            "time": req.params.time,
+            "active": true
         }).then( () => {
             return res.json({"sent":"True"})
         });
     })
 });
+
 /*
 async function generateHangoutsUrl(){
 
 }
 */
+
 app.get('/hosts', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collection("hosts").find({time:"10/2/19 at 2:20pm"}, function (err, doc) {
+        db.collection("hosts").find({"active":true}, function (err, doc) {
             doc.toArray( function(err, data){
                 res.send(data);
             });
@@ -45,7 +48,7 @@ app.get('/newUser', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collection("users").insert(req.params.userObj, function (err, doc) {
+        db.collection("users").insert(req.params.gval, function (err, doc) {
            if(err){
                console.log(err);
            } 
@@ -68,7 +71,6 @@ async function getUserIdPair(pair){
             })
 
             resolve({one:u1, two:u2});
-
         }
         catch(err){
             reject(err);
@@ -76,12 +78,22 @@ async function getUserIdPair(pair){
     });
 }
 
-app.get('/user/addFriend/:friendID', async(req, res)  => {
+app.get('/user/addFriend/:friendID1/:friendID2', async(req, res)  => {
     const client = new MongoClient(url);
     client.connect(async (err) => {
         const db = client.db(dbName);
-        x = await getUserIdPair(req.params.userDiff);
-        db.collections("friends").insert(x, function (err, doc) {
+        x = req.params.friendID1;
+        y = req.params.friendID2;
+
+        db.collections("users").findOne({"gval":x}).then((doc) => {
+            x = doc._id;
+        })
+
+         db.collections("users").findOne({"gval":y}).then((doc) => {
+            y = doc._id;
+        })
+
+        db.collections("friends").insert({"friend1":x, "friend2":y}, function (err, doc) {
             if(err){
                 console.log(err)
             }
@@ -102,7 +114,7 @@ app.get('/user/:id', function(req, res) {
 });
 
 app.get('/', function (req, res) {
- return res.send('{"return":"none"}');
+    return res.send('{"return":"none"}');
 });
 
 app.listen(process.env.PORT || 8080);
