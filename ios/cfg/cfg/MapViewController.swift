@@ -12,9 +12,10 @@ import CoreLocation
 import FlyoverKit
 import Speech
 
+
 class MapViewController: UIViewController {
-    @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
     var currentCoordinate: CLLocationCoordinate2D?
@@ -139,18 +140,18 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-
+        
 //        showRoute()
         let annView = view.annotation
-
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         guard let detailVC = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController else {
             print("detals vc not founds")
             return
         }
-
-
-
+        
+        
+        
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
@@ -175,5 +176,3 @@ extension MapViewController: CLLocationManagerDelegate {
         
     }
 }
-
-
