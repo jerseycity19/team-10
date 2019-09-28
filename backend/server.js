@@ -19,8 +19,9 @@ app.get('/hosts', async (req, res) => {
     });
 });
 
-router.get('/user/:id', function(req, res) { 
-    console.log("found");
+app.get('/user/:id', function(req, res) { 
+    console.log(req.params.id);
+    return res.send({"num":id});
 });
 
 app.get('/', function (req, res) {
