@@ -27,6 +27,7 @@ class MapViewController: UIViewController {
         userLocationSetup()
         self.mapSetup()
         
+        
     }
     
     func mapSetup() {
@@ -83,6 +84,42 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(jersey)
     }
     
+    func showRoute() {
+        let sourceLocation = currentCoordinate ?? CLLocationCoordinate2D(latitude: 40.6742, longitude: -73.8418)
+        let destinationLocation = CLLocationCoordinate2D(latitude: 40.7484, longitude: -73.9857)
+        
+        let sourcePlaceMark = MKPlacemark(coordinate: sourceLocation)
+        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+        
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
+        directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
+        directionRequest.transportType = .automobile
+        
+        let directions = MKDirections(request: directionRequest)
+        directions.calculate {(response, error) in
+            guard let directionResponse = response else {
+                if let error = error{
+                    print("There was an error getting directions==\(error.localizedDescription)")
+                }
+                return
+            }
+            let route = directionResponse.routes[0]
+            self.mapView.addOverlay(route.polyline, level: .aboveRoads)
+            
+            let rect = route.polyline.boundingMapRect
+            self.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
+        }
+        
+        self.mapView.delegate = self
+    }
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer{
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = UIColor.blue
+        renderer.lineWidth = 4.0
+        return renderer
+    }
     
 }
 
@@ -101,20 +138,42 @@ extension MapViewController: MKMapViewDelegate {
         }
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        
+//    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+//
 //        showRoute()
-        let annView = view.annotation
+//        let annView = view.annotation
+//
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
+//            print("detals vc not founds")
+//            return
+//        }
+//
+//
+//
+//        self.navigationController?.pushViewController(detailVC, animated: true)
+//    }
+}
+
+extension MapViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        guard let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as? DetailsViewController else {
-            print("detals vc not founds")
-            return
+        self.mapView.showsUserLocation = true
+        guard let latestLocation = locations.first else { return }
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let region = MKCoordinateRegion(center: latestLocation.coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+        
+        if currentCoordinate == nil{
+            zoomIn(latestLocation.coordinate)
+            addAnnotations()
         }
         
+        currentCoordinate = latestLocation.coordinate
         
-        
-        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
+
 
