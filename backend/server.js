@@ -12,12 +12,13 @@ app.get('/newhost', async (req, res) => {
         hUrl = "hangouts.google.com/p14c3h01d";//await generateHangoutsUrl();
         const db = client.db(dbName);
         db.collection("hosts").insert({
-            url: hUrl,
-            locations: {
-                lat: req.params.lat,
-                lng: req.params.lng
+            "url": hUrl,
+            "locations": {
+                "lat": req.params.lat,
+                "lng": req.params.lng,
             },
-            Time: req.params.time
+            "time": req.params.time,
+            "active": true
         }).then( () => {
             return res.json({"sent":"True"})
         });
@@ -32,7 +33,7 @@ app.get('/hosts', async (req, res) => {
     const client = new MongoClient(url);
     client.connect(function(err) {
         const db = client.db(dbName);
-        db.collection("hosts").find({time:"10/2/19 at 2:20pm"}, function (err, doc) {
+        db.collection("hosts").find({"active":true}, function (err, doc) {
             doc.toArray( function(err, data){
                 res.send(data);
             });
