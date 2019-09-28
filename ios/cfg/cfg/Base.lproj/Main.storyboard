@@ -144,6 +144,9 @@
                                 <state key="normal" title="Begin">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapBegin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIG-Gb-a0A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-gp-ZPC">
                                 <rect key="frame" x="109" y="647" width="41" height="30"/>
@@ -159,6 +162,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="RA7-tG-cBX"/>
                     <navigationItem key="navigationItem" id="tdb-dA-VHh"/>
+                    <connections>
+                        <outlet property="beginButton" destination="R9H-nL-6ib" id="cKv-f5-WHV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
