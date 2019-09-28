@@ -37,6 +37,12 @@ The following requirements / functionality are taken into consideration and comp
 **Developers**
 
 - Helal Chowdhury 
+<div style="display: inline-block;">
+  <img src="https://github.com/jerseycity19/team-10/blob/master/Helal%20Chowdhury%20.jpg"  width="200">
+ <!-- <img src="assets/"  width="295"> -->
+  <!-- <img src="assets/"  width="400"> -->
+</div><br/>
+
 - Smit Shah                
 - Catherine Lin        
 - Sulbha Aggarwal      
