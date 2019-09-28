@@ -78,12 +78,22 @@ async function getUserIdPair(pair){
     });
 }
 
-app.get('/user/addFriend/:friendID', async(req, res)  => {
+app.get('/user/addFriend/:friendID1/:friendID2', async(req, res)  => {
     const client = new MongoClient(url);
     client.connect(async (err) => {
         const db = client.db(dbName);
-        x = await getUserIdPair(req.params.userDiff);
-        db.collections("friends").insert(x, function (err, doc) {
+        x = req.params.friendID1;
+        y = req.params.friendID2;
+
+        db.collections("users").findOne({"gval":x}).then((doc) => {
+            x = doc._id;
+        })
+
+         db.collections("users").findOne({"gval":y}).then((doc) => {
+            y = doc._id;
+        })
+
+        db.collections("friends").insert({"friend1":x, "friend2":y}, function (err, doc) {
             if(err){
                 console.log(err)
             }
