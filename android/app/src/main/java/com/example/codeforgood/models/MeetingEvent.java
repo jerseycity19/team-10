@@ -1,14 +1,12 @@
 package com.example.codeforgood.models;
 
-import java.util.Date;
-
 public class MeetingEvent {
     private String url;
     private String imagePath;
     private int month;
-    private int date;
+    private String date;
 
-    public MeetingEvent(String url, int month, int date, String imagePath) {
+    public MeetingEvent(String url, int month, String date, String imagePath) {
         this.url = url;
         this.imagePath = imagePath;
         this.month = month;
@@ -42,11 +40,11 @@ public class MeetingEvent {
         this.month = month;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

@@ -32,11 +32,11 @@
         android:id="@+id/month_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_x="69dp"
-        android:layout_y="84dp"
+        android:layout_x="71dp"
+        android:layout_y="73dp"
         android:text="Sun"
-        android:textSize="40dp"
         android:textColor="#32CD32"
+        android:textSize="40dp"
         android:textStyle="bold" />
 
     <Button

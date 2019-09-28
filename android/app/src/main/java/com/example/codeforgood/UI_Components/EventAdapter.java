@@ -2,6 +2,7 @@ package com.example.codeforgood.UI_Components;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,10 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     private Context context;
     private List<MeetingEvent> meetings;
 
+    public EventAdapter(Context context, List<MeetingEvent> meetings) {
+        this.context = context;
+        this.meetings = meetings;
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView monthtv, dateTv;
@@ -34,9 +39,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
         }
 
         void bind(MeetingEvent meetingEvent) {
-            monthtv.setText(meetingEvent.getMonth());
-            dateTv.setText(meetingEvent.getDate());
-//            Glide.with(context).load(String.format("https://image.tmdb.org/t/p/w342%s", movie.getPosterPath())).into(ivPoster);
+            monthtv.setText(String.valueOf(meetingEvent.getMonth()));
+//            dateTv.setText(meetingEvent.getDate());
+//            Glide.with(context).load(meetingEvent.getImagePath()).into(imageView);
 
 //            container.setOnClickListener(v -> {
 //                Intent intent = new Intent(context, DetailActivity.class);
@@ -55,8 +60,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
-        MeetingEvent movie = meetings.get(position);
-        viewHolder.bind(movie);
+        MeetingEvent meeting = meetings.get(position);
+        viewHolder.bind(meeting);
     }
 
     @Override

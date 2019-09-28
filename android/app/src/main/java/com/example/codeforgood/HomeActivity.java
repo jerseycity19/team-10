@@ -2,23 +2,36 @@ package com.example.codeforgood;
 
 import android.os.Bundle;
 
+import com.example.codeforgood.UI_Components.EventAdapter;
+import com.example.codeforgood.models.MeetingEvent;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HomeActivity extends AppCompatActivity {
-
-
+    private EventAdapter eventAdapter;
+    private List<MeetingEvent> meetingEvents;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
+        meetingEvents = new ArrayList<>();
+        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        meetingEvents.add(new MeetingEvent("",5,"Sun","https://www.insure-our-event.co.uk/wp-content/uploads/2018/08/music-event-1024x683.jpg"));
+        initRecylerView();
     }
 
 
@@ -42,5 +55,11 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    private void initRecylerView() {
+        RecyclerView recyclerView = findViewById(R.id.eventRV);
+        eventAdapter = new EventAdapter(this, meetingEvents);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        recyclerView.setAdapter(eventAdapter); //pair recyclerView and an adapter together
     }
 }
