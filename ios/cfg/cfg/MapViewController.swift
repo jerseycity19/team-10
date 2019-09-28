@@ -84,15 +84,17 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(prospectPark)
         mapView.addAnnotation(jersey)
         
-        let rome = MKPointAnnotation()
-        jersey.title = "It's My Park"
-        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
+     
 
         let col = MKPointAnnotation()
         jersey.title = "It's My Park"
-        jersey.coordinate = CLLocationCoordinate2D(latitude: 49.111, longitude: 2.3522)
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8606, longitude: 2.3376)
+        
+        let col2 = MKPointAnnotation()
+        jersey.title = "It's My Park"
+        jersey.coordinate = CLLocationCoordinate2D(latitude: 48.8706, longitude: 2.4376)
 
-        mapView.addAnnotation(rome)
+        mapView.addAnnotation(col2)
         mapView.addAnnotation(col)
         
         
