@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
         self.mapView.isScrollEnabled = true
         
         let camera = FlyoverCamera(mapView: self.mapView, configuration: FlyoverCamera.Configuration(duration: 6.0, altitude: 60000, pitch: 45.0, headingStep: 40.0))
-        camera.start(flyover: FlyoverAwesomePlace.newYork)
+        camera.start(flyover: FlyoverAwesomePlace.parisEiffelTower)
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(20), execute:{
             camera.stop()
         })
