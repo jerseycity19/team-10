@@ -22,6 +22,6 @@ NSString *const OIDGrantTypeAuthorizationCode = @"authorization_code";
 
 NSString *const OIDGrantTypeRefreshToken = @"refresh_token";
 
-NSString *const OIDGrantTypePassword = "";
+NSString *const OIDGrantTypePassword = @"";
 
 NSString *const OIDGrantTypeClientCredentials = @"client_credentials";
